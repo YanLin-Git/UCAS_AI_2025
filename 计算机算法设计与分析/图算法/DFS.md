@@ -28,7 +28,8 @@ $$
 <summary>1. 反向边</summary>
 
 ![back_edge](pngs/back_edge.png)
-> 从`j`访问`b`时，发现`b`是祖先
+> 从`j`访问`b`时，发现`b`是祖先  
+> 此时`b`一定为**灰色**
 
 </details>
 
@@ -36,7 +37,8 @@ $$
 <summary>2. 前向边</summary>
 
 ![forward_edge](pngs/forward_edge.png)
-> 从`a`访问`s`时，`s`已经作为后代被访问过
+> 从`a`访问`s`时，`s`已经作为后代被访问过  
+> 此时`s`已被访问过，为**黑色**。且$d(a)<d(s)$
 
 </details>
 
@@ -44,7 +46,8 @@ $$
 <summary>3. 交叉边</summary>
 
 ![cross_edge](pngs/cross_edge.png)
-> 从`e`访问`j`时，`j`在其他分支被访问过
+> 从`e`访问`j`时，`j`在其他分支被访问过  
+> 此时`j`已被访问过，为**黑色**。且$d(e)>d(j)$
 
 </details>
 
