@@ -7,8 +7,8 @@
 ### 1.1.1 计算距离的几种方式
 |||公式|应用|
 |---|---|---|---|
-|曼哈顿距离|向量的1范数|$\left[ \sum\limits_{i=1}^n \left( x^{(1)}_i - x^{(2)}_i \right)^2 \right]^{\frac 1 2}$|城市距离|
-|欧氏距离|向量的2范数|$ \sum\limits_{i=1}^n \left\| x^{(1)}_i - x^{(2)}_i \right\| $|两点间距|
+|曼哈顿距离|向量的1范数|$\sum\limits_{i=1}^n \left\| x^{(1)}_i - x^{(2)}_i \right\|$|城市距离|
+|欧氏距离|向量的2范数|$\left[ \sum\limits_{i=1}^n \left( x^{(1)}_i - x^{(2)}_i \right)^2 \right]^{\frac 1 2}$|两点间距|
 |切比雪夫距离|向量的$\infty$范数|$\max\limits_{1 \le i \le n} \left\| x^{(1)}_i - x^{(2)}_i \right\| $|棋盘距离|
 |闵可夫斯基距离|向量的p范数|$\left[ \sum\limits_{i=1}^n \left( x^{(1)}_i - x^{(2)}_i \right)^p \right]^{\frac 1 p}$||
 
