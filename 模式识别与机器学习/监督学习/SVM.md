@@ -270,7 +270,7 @@ $$
 
 $$
 \begin{aligned}
-    &循环直至收敛：\{  \\
+    &重复直到收敛：\{  \\
     &\qquad For \quad i=1,...,m, \{ \\
     &\qquad \qquad \alpha_i:= \arg \max_{\hat \alpha_i}G(\alpha_1,...,\alpha_{i-1},\hat\alpha_i,\alpha_{i+1},...,\alpha_m) \\
     &\qquad \} \\
@@ -284,16 +284,21 @@ $$
 
 ## 6.2 SMO
 
-> 在上面的版本中，最内层循环对变量重新优化的顺序是按照参数排列次序:  
-> $\alpha_1, \alpha_2, \cdots, \alpha_m, \alpha_1, \alpha_2, \cdots, \alpha_m, \alpha_1, \alpha_2, \cdots$ 来进行的。  
+> 在上面的版本中，最内层循环，选择参数的顺序是按照参数的排列次序:  
+> 依次更新$\alpha_1, \alpha_2, \cdots, \alpha_m$
 
-更进一步，我们可以根据预测哪个参数可以使 $G(\alpha)$ 增加最多，来选择下一个更新的参数
+更进一步，我们可以采用`启发式算法`：  
+预测哪个参数可以使 $G(\alpha)$ 增加最多，来作为下一个需要更新的参数。
 
-SMO算法，基本思想如下:  
+#### SMO算法，基本思想如下:  
+
 重复直到收敛 {
 
-1.  选择出某一对的 {$\alpha_i$、$\alpha_j$} (可以使 $G(\alpha)$ 增加最多的一对参数) 
-
+1.  选择出某一对的 {$\alpha_i$、$\alpha_j$}
+    - 可以使 $G(\alpha)$ 增加最多的一对参数
+    1. **外循环**：寻找第一个乘子$\alpha_i$
+    2. **内循环**：基于$\alpha_i$，再去寻找$\alpha_j$
 2.  保持其他的 $\alpha_k$ 值固定($k\neq i,j$)，通过优化$G(\alpha)$，来调整 $\alpha_i$ 、 $\alpha_j$
+    - 通过**解析法**直接求解
 
 }
