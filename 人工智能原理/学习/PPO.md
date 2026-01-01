@@ -89,18 +89,22 @@ def compute_advantage(gamma, lmbda, td_delta):
 为了提高利用率，即**准备一次数据，可用来训练多个epoch**。  
 引入了`重要性采样`技术：  
 $$
-使用\frac {\pi_{\theta} (a_t|s_t)} {\pi_{\theta_{old}} (a_t|s_t)} \hat{A}(s_t, a_t)，来近似真正的A(s_t, a_t)
+\begin{aligned}
+使用 \quad & E_{a_t \sim \pi_{\theta_{old}} (a_t|s_t)} \left[ \frac {\pi_{\theta} (a_t|s_t)} {\pi_{\theta_{old}} (a_t|s_t)} \hat{A}(s_t, a_t) \right] \\
+\\
+来近似 \quad & E_{a_t \sim \pi_{\theta} (a_t|s_t)} \left[ \hat{A}(s_t, a_t) \right]
+\end{aligned}
 $$
 
 ### 1.4.2 裁剪
 
 但这个近似存在限制：$\pi_{\theta_{old}} (a_t|s_t)$ 与 $\pi_{\theta (a_t|s_t)}$ 不能相差过大。  
-于是PPO中对这个近似，做了进一步裁剪：
+于是PPO中，又做了进一步裁剪：
 $$
 \min \left\{ \frac {\pi_\theta (a_t|s_t)} {\pi_{\theta_{old}} (a_t|s_t)} \hat{A}(s_t, a_t), \quad clip \left( \frac {\pi_\theta (a_t|s_t)} {\pi_{\theta_{old}} (a_t|s_t)}, 1-\varepsilon, 1+\varepsilon \right) \hat{A}(s_t, a_t) \right\}
 $$
 
-- 使用裁剪后的结果，来近似真正的 $A(s_t, a_t)$
+### 1.4.3 对应代码
 
 ```python
 for _ in range(self.epochs):
@@ -142,11 +146,6 @@ $$
 ```python
 critic_loss = torch.mean(F.mse_loss(self.critic(states), td_target.detach()))
 ```
-
-## 1.6. KL惩罚项
-
-> 读完代码，基本理解**PPO**的完整流程了。  
-> 还剩最后一项：**KL惩罚项**，可以参考文末那篇博客。
 
 # 二、RL for LLM
 
