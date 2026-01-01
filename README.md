@@ -18,8 +18,12 @@
 
 ---
 
-> 有些同学喜欢`clone`到本地观看，补一个**本地部署流程**
-> 1. 安装python3
-> 2. clone本仓库 `git clone https://github.com/YanLin-Git/UCAS_AI_2025.git`
-> 3. 进入文件目录，执行`sh start_docsify.sh`
-> 4. 浏览器中输入`http://localhost:3001/#/`
+<details>
+<summary><b>本地部署流程</b></summary>
+
+1. 安装python3
+2. clone本仓库 `git clone https://github.com/YanLin-Git/UCAS_AI_2025.git`
+3. 进入文件目录，执行`sh start_docsify.sh`
+4. 浏览器中输入`http://localhost:3001/#/`
+
+</details>
