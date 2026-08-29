@@ -7,7 +7,7 @@
         - [基础概念](强化学习/基础概念.md)
         - [动态规划](强化学习/动态规划.md)
         - [蒙特卡洛 & TD](强化学习/蒙特卡洛&TD.md)
-        - [Dyna](强化学习/Dyna.md)
+        - [ValueFunction的扩展](强化学习/ValueFuncExt.md)
         - [PolicyGradient系列](强化学习/PolicyGradient系列.md)
         - [ActorCritic](强化学习/ActorCritic.md)
         - [GPS](强化学习/GPS.md)

@@ -7,13 +7,14 @@
     ![RL_all](pngs/RL_all.png)
 
     <details>
-    <summary>然后介绍了强化学习的分类，后面会按照这个顺序依次学习</summary>
+    <summary>了解强化学习的几种分类，后面会按照这个顺序依次学习</summary>
     
     ![RL_order](pngs/RL_order.png)
     
     1. [动态规划](强化学习/动态规划.md)
     2. [蒙特卡洛 & TD](强化学习/蒙特卡洛&TD.md)
-    - [Dyna](强化学习/Dyna.md)
+        - [ValueFunction的扩展](强化学习/ValueFuncExt.md)
+        - 开始从表格法，过渡到神经网络
     3. [PolicyGradient系列](强化学习/PolicyGradient系列.md)
     4. [ActorCritic](强化学习/ActorCritic.md)
     5. [GPS](强化学习/GPS.md)
