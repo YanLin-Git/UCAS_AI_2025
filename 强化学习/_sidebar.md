@@ -8,7 +8,7 @@
         - [动态规划](强化学习/动态规划.md)
         - [蒙特卡洛 & TD](强化学习/蒙特卡洛&TD.md)
         - [ValueFunction的扩展](强化学习/ValueFuncExt.md)
-        - [PolicyGradient系列](强化学习/PolicyGradient系列.md)
+        - [PolicyGradient](强化学习/PolicyGradient.md)
         - [ActorCritic](强化学习/ActorCritic.md)
         - [GPS](强化学习/GPS.md)
         - [Dreamer](强化学习/Dreamer.md)

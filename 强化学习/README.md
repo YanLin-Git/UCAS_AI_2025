@@ -14,8 +14,7 @@
     1. [动态规划](强化学习/动态规划.md)
     2. [蒙特卡洛 & TD](强化学习/蒙特卡洛&TD.md)
         - [ValueFunction的扩展](强化学习/ValueFuncExt.md)
-        - 开始从表格法，过渡到神经网络
-    3. [PolicyGradient系列](强化学习/PolicyGradient系列.md)
+    3. [PolicyGradient](强化学习/PolicyGradient.md)
     4. [ActorCritic](强化学习/ActorCritic.md)
     5. [GPS](强化学习/GPS.md)
     6. [Dreamer](强化学习/Dreamer.md)
