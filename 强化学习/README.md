@@ -1,4 +1,4 @@
-# 人工智能原理与应用
+# 强化学习
 
 1. [基础概念](强化学习/基础概念.md)
     - 首先介绍了强化学习中的一些基础概念
@@ -13,9 +13,9 @@
     
     1. [动态规划](强化学习/动态规划.md)
     2. [蒙特卡洛 & TD](强化学习/蒙特卡洛&TD.md)
-        - [ValueFunction的扩展](强化学习/ValueFuncExt.md)
+        - 学完前面两个部分，补充了更多关于[ValueFunction的扩展](强化学习/ValueFuncExt.md)
     3. [PolicyGradient](强化学习/PolicyGradient.md)
-    4. [ActorCritic](强化学习/ActorCritic.md)
+    4. [ActorCritic](强化学习/ActorCritic/)
     5. [GPS](强化学习/GPS.md)
     6. [Dreamer](强化学习/Dreamer.md)
     
