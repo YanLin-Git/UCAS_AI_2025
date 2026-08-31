@@ -11,7 +11,6 @@
         - [PolicyGradient](强化学习/PolicyGradient.md)
         - [ActorCritic](强化学习/ActorCritic/)
             - [ActorCritic](强化学习/ActorCritic/ActorCritic.md)
-            - [DQN](强化学习/ActorCritic/DQN.md)
             - [DDPG](强化学习/ActorCritic/DDPG.md)
             - [ActorCritic系列](强化学习/ActorCritic/ActorCriticExt.md)
         - [GPS](强化学习/GPS.md)
