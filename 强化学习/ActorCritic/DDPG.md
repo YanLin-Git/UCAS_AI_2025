@@ -55,8 +55,8 @@
     - 跟Q-learning一样，使用**贝尔曼最优方程**求解
 - **DDPG**则使用了`ActorCritic`架构
     - `深度网络`有两个
-        1. $Q_\phi(s,a)$
-        2. $\mu_\theta(s)$
+        1. Actor: 确定性策略$\mu_\theta(s)$
+        2. Critic: $Q_\phi(s,a)$
     - 使用**策略迭代**求解
 
 > - 处理`连续动作`的关键：$\mu_\theta$
