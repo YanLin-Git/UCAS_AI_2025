@@ -19,11 +19,11 @@
 
 ## 2.1 LQR
 
-如果`dynamic`是线性的，可以用**LQR**直接求解
+如果`dynamics`是线性的，可以用**LQR**直接求解
 
 ## 2.2 iLQR
 
-如果`dynamic`是非线性的，可以用**iLQR**来迭代求解
+如果`dynamics`是非线性的，可以用**iLQR**来迭代求解
 
 # 三、GPS
 
