@@ -12,13 +12,17 @@
     $$
     L_{\pi_\theta}(\pi_{\theta'}) = E_{(s,a) \sim \pi_\theta} \left[ \frac {\pi_{\theta'}(a|s)} {\pi_{\theta}(a|s)} A_{\pi_\theta}(s,a) \right]
     $$
+    > - $(s,a) \sim \pi_\theta$表明是从旧策略$\pi_\theta$采样
+    > - 于是我们可以使用旧策略$\pi_\theta$的数据，来评估、更新$\pi_{\theta'}$
+
 - 于是我们的目标变成了一个 带约束的优化问题:
     
     ![surrogate](pngs/surrogate.png)
 
 # 二、NPG（Natural Policy Gradient）
 
-- **NPG**中对`目标函数`一阶泰勒展开，对`KL散度约束`二阶泰勒展开
+1. 对`目标函数`一阶泰勒展开
+2. 对`KL散度约束`二阶泰勒展开
 - 直接算出一个**解析解**:
 
     ![NPG](pngs/NPG.png)
@@ -38,3 +42,7 @@
 > **PPO**中直接抛弃了$H^{-1}$，更简单粗暴
 
 - 直接限制新旧策略的概率比率 $\frac {\pi_{\theta'}(a|s)} {\pi_{\theta}(a|s)}$
+
+# 五、更多变体
+
+~~略~~
