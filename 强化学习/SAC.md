@@ -5,7 +5,7 @@
 
 # 一、VAE
 
-1. 上节课**RSSM**中，**WordModel**的优化目标，就是**VAE**中的**ELBO**
+1. 上节课**RSSM**中，**WorldModel**的优化目标，就是**VAE**中的**ELBO**
 2. **VAE**中的**Encoder**在做什么？
     - **变分推断**：真实的$p(z|x)$很难求，用一个简单的$q_\phi(z|x)$来近似
 

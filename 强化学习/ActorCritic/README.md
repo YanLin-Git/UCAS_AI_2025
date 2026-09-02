@@ -10,5 +10,5 @@
 
 - 内容较多，分三部分来介绍
     1. 基础版的[ActorCritic](强化学习/ActorCritic/ActorCritic.md)
-    2. [DDPG](强化学习/DDPG.md)
-    3. [ActorCritic系列](强化学习/ActorCriticExt.md)
+    2. [DDPG](强化学习/ActorCritic/DDPG.md)
+    3. [ActorCritic系列](强化学习/ActorCritic/ActorCriticExt.md)
